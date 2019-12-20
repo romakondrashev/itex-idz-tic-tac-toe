@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Крестики нолики</title>
+	<link rel="stylesheet" href="assets/vendors/reset.css">
+	<link rel="stylesheet" href="assets/vendors/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/vendors/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body id="main">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5 mx-auto text-center">
+				<h2>Игра №<b id="gameNumber">1</b></h2>
+				<p id="tips">Сделайте первый ход!</p>
+				
+				<div id="game" class="mb-5"></div>
+
+				<table class="table table-bordered">
+					<caption>Таблица очков</caption>
+					<tr>
+						<th>X</th>
+						<th>O</th>
+					</tr>
+					<tr>
+						<td id="countWinsX">0</td>
+						<td id="countWinsO">0</td>
+					</tr>
+				</table>
+				<h3>Результаты предыдущих игр</h3>
+				<div id="previousGames"></div>
+			</div>	
+
+		</div>
+	</div>
+	
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
