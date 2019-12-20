@@ -1,0 +1,42 @@
+#game,.prevGameWrap {
+	display: grid;
+	grid-template-columns: repeat(3, 50px);
+	justify-content: center;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+#game .block,
+.prevGameWrap .block {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #eee;
+	
+	font-size: 32px;
+}
+#game .block:hover {
+	box-shadow: 0px 0px 5px 0px #ccc;
+	cursor: pointer;
+}
+.prevGameWrap .block:hover {
+	box-shadow: 0px 0px 5px 0px #ccc;
+	cursor: context-menu;
+}
+#previousGames p {
+	font-size: 20px;
+    font-weight: bold;	
+}
+#previousGames p.win {
+	color: green;
+}
+#previousGames p.loose {
+	color: red;
+}
+#previousGames p.draw {
+	color: orange;
+}
+    
+table caption {
+	caption-side: top;
+	text-align: center;
+}
